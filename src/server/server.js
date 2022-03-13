@@ -144,7 +144,6 @@ const app = express();
                 for(let oracleIdx = 0 ; oracleIdx < oracleIndexes.length ; oracleIdx++) {
                     if (oracleIndexes[oracleIdx] === oracleIndexRequested) {
                         // Cooking code
-                        // statusCode = (Math.floor(Math.random() * 6))*10;
                         statusCode = 20;
 
                         // Send response to Smart Contract
