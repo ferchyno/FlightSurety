@@ -8,8 +8,15 @@ module.exports = {
         return new HDWalletProvider(mnemonic, "http://127.0.0.1:8545/", 0, 50);
       },
       network_id: '*',
-      gas: 9999999
+      gas: 4500000
     }
+    // development: {
+    //   host: "127.0.0.1",
+    //   port: 8545,
+    //   network_id: "*", // Match any network id
+    //   gas: 4500000,        // rinkeby has a lower block limit than mainnet
+    //   // gasPrice: 10000000000
+    // },
   },
   compilers: {
     solc: {
